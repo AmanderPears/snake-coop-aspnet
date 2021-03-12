@@ -10,11 +10,7 @@ gameConnection.on("info", function (count) {
 });
 
 gameConnection.on("tick", function (json) {
-    // let list = document.getElementById('messageList');
-    // let li = document.createElement('li');
-    // li.innerText = json;
-    // list.appendChild(li);
-    console.log(json);
+    // console.log(json);
     renderGame(json);
 });
 
@@ -24,6 +20,8 @@ gameConnection.on("InputEnabled", function (state) {
 });
 
 gameConnection.start().then(function () {
+    console.log(gameConnection);
+
     //send join game signal
     let id = Math.round(Math.random() * Date.now()).toString();
     gameConnection.invoke("JoinGame", id).catch(function (err) {
@@ -72,7 +70,9 @@ function renderGame(jsonString) {
     ctx.strokeRect(preyx, preyy, sizeMult, sizeMult);
 
     //paint snakes
-    for (const snake of data.snakes) {
+    for (let i = 0; i < data.snakes.length; i++) {
+        let snake = data.snakes[i];
+        // for (const snake of data.snakes) {
         for (const cell of snake.cells) {
             let x = parseInt(cell.x) * sizeMult,
                 y = parseInt(cell.y) * sizeMult;
@@ -80,9 +80,14 @@ function renderGame(jsonString) {
             ctx.fillRect(x, y, sizeMult, sizeMult);
             ctx.strokeStyle = '#86b300';
             ctx.strokeRect(x, y, sizeMult, sizeMult);
-
+            // ctx.font = "20px Courier Sans";
+            // ctx.fillStyle = "white";
+            // ctx.fillText(i, 5, 15, sizeMult);
         }
     }
+
+    //cosmetic
+    setPlayerColorInfo(data);
 }
 
 var inputEnabled = false;
@@ -118,3 +123,9 @@ document.addEventListener('keydown', event => {
         }
     }
 });
+
+
+function setPlayerColorInfo(data) {
+    let ele = document.getElementById('playerColor');
+    ele.style.background = data.snakes.find(s => s.playerId == gameConnection.connectionId).color;
+}

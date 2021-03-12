@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OEO2LtZXlsrPPwcY+fPWHFBg8kUUATZYTnEIVUXAufvw859Pw1KeC9bgKEaNX8ZBD/BamZUgIitXs/kORIXemw==",
+  "dgSpecHash": "6rPXBl01CHj77fh78kvmSklruPKEYBC6XZyAtJiwUX/UXWi3I3+gUIVgksMkdWkZVnzltLGL1TaP5UI4eAmBhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amand\\Documents\\SignalRChat\\SignalRChat.csproj",
+  "projectFilePath": "C:\\Users\\amand\\Documents\\snake-coop-aspnet\\SignalRChat.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

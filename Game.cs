@@ -31,7 +31,7 @@ public sealed class Game
         this.gameBoardwidth = 30;
         this.snakes = new List<Snake>();
 
-        this.gameTimer = new System.Timers.Timer(300);
+        this.gameTimer = new System.Timers.Timer(700);
         this.gameTimer.Elapsed += Tick;
         this.gameTimer.AutoReset = true;
         this.gameTimer.Enabled = true;
@@ -88,17 +88,17 @@ public sealed class Game
             }
 
             //wrap arround
-            if (head.x > gameBoardwidth)
+            if (head.x > (gameBoardwidth - 1))
                 head.x = 0;
 
-            if (head.y > gameBoardheight)
+            if (head.y > (gameBoardheight - 1))
                 head.y = 0;
 
             if (head.x < 0)
-                head.x = gameBoardwidth;
+                head.x = (gameBoardwidth - 1);
 
             if (head.y < 0)
-                head.y = gameBoardheight;
+                head.y = (gameBoardheight - 1);
 
             s.cells.RemoveAt(0);
             s.cells.Add(head);
@@ -140,9 +140,9 @@ public sealed class Game
     public void CreateNewPrey(Cell prey)
     {
         var availableSpots = new List<Cell>();
-        for (int x = 0; x <= gameBoardwidth; x++)
+        for (int x = 0; x < gameBoardwidth; x++)
         {
-            for (int y = 0; y <= gameBoardheight; y++)
+            for (int y = 0; y < gameBoardheight; y++)
             {
                 availableSpots.Add(new Cell(x, y));
             }
