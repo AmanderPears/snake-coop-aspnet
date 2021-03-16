@@ -3,6 +3,7 @@ C:\Users\amand\Documents\snake-coop-aspnet\bin\Debug\net5.0\linux-x64\publish\ww
 C:\Users\amand\Documents\snake-coop-aspnet\bin\Debug\net5.0\linux-x64\publish\wwwroot\favicon.ico
 C:\Users\amand\Documents\snake-coop-aspnet\bin\Debug\net5.0\linux-x64\publish\wwwroot\js\chat.js
 C:\Users\amand\Documents\snake-coop-aspnet\bin\Debug\net5.0\linux-x64\publish\wwwroot\js\game.js
+C:\Users\amand\Documents\snake-coop-aspnet\bin\Debug\net5.0\linux-x64\publish\wwwroot\js\passGen.js
 C:\Users\amand\Documents\snake-coop-aspnet\bin\Debug\net5.0\linux-x64\publish\wwwroot\js\site.js
 C:\Users\amand\Documents\snake-coop-aspnet\bin\Debug\net5.0\linux-x64\publish\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\amand\Documents\snake-coop-aspnet\bin\Debug\net5.0\linux-x64\publish\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

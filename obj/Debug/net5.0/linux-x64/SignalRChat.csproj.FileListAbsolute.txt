@@ -350,3 +350,4 @@ C:\Users\amand\Documents\snake-coop-aspnet\obj\Debug\net5.0\linux-x64\SignalRCha
 C:\Users\amand\Documents\snake-coop-aspnet\obj\Debug\net5.0\linux-x64\ref\SignalRChat.dll
 C:\Users\amand\Documents\snake-coop-aspnet\obj\Debug\net5.0\linux-x64\SignalRChat.pdb
 C:\Users\amand\Documents\snake-coop-aspnet\obj\Debug\net5.0\linux-x64\SignalRChat.genruntimeconfig.cache
+C:\Users\amand\Documents\snake-coop-aspnet\obj\Debug\net5.0\linux-x64\Razor\Pages\PassGen.cshtml.g.cs

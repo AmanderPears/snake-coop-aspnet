@@ -20,7 +20,7 @@ gameConnection.on("InputEnabled", function (state) {
 });
 
 gameConnection.start().then(function () {
-    console.log(gameConnection);
+    // console.log(gameConnection);
 
     //send join game signal
     let id = Math.round(Math.random() * Date.now()).toString();
@@ -129,3 +129,52 @@ function setPlayerColorInfo(data) {
     let ele = document.getElementById('playerColor');
     ele.style.background = data.snakes.find(s => s.playerId == gameConnection.connectionId).color;
 }
+
+
+// right directionctx.beginPath();
+// ctx.moveTo(x+mult, y);
+// ctx.lineTo(x+mult, y+mult);
+
+// ctx.lineTo(x+mult*.5, y+mult);
+
+// //left
+// ctx.lineTo(x, y+mult*.7);
+// ctx.lineTo(x, y+mult*.3);
+
+// ctx.lineTo(x+mult*.5, y);
+
+// ctx.closePath();
+// ctx.fill();
+// ctx.stroke();
+
+
+
+//incompletelet x = 0;
+// let y = 0;
+// let mult = 50;
+
+// ctx.beginPath();
+// ctx.moveTo(x, y);
+// ctx.lineTo(x+mult*.6, y);
+
+// ctx.lineTo(x+mult, y+mult*.2);
+// ctx.lineTo(x+mult, y+mult*.4);
+
+// ctx.lineTo(x+mult*.6, y+mult*.4);
+// ctx.lineTo(x+mult*.6, y+mult*.1);
+// ctx.lineTo(x+mult*.2, y+mult*.1);
+// ctx.lineTo(x+mult*.2, y+mult*.45);
+
+// ctx.lineTo(x+mult, y+mult*.45);
+// ctx.lineTo(x+mult, y+mult*.79);
+
+// ctx.lineTo(x+mult*.2, y+mult*.85);
+// ctx.lineTo(x+mult*.2, y+mult*.9);
+// ctx.lineTo(x+mult*.6, y+mult*.9);
+// ctx.lineTo(x+mult*.6, y+mult*.8);
+
+
+
+// ctx.closePath();
+// ctx.fill();
+// ctx.stroke();

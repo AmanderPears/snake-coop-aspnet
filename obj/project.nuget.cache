@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6rPXBl01CHj77fh78kvmSklruPKEYBC6XZyAtJiwUX/UXWi3I3+gUIVgksMkdWkZVnzltLGL1TaP5UI4eAmBhA==",
+  "dgSpecHash": "BnzVwuBEwyImy08A50bPAoYsxWIRHn/hOxKbB5GNXdcMot6sfSQeEFk8Ia2+AuuCBmGlYzYAMuz2p1M4JobHvA==",
   "success": true,
   "projectFilePath": "C:\\Users\\amand\\Documents\\snake-coop-aspnet\\SignalRChat.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\amand\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\5.0.4\\microsoft.netcore.app.runtime.linux-x64.5.0.4.nupkg.sha512",
+    "C:\\Users\\amand\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\5.0.4\\microsoft.aspnetcore.app.runtime.linux-x64.5.0.4.nupkg.sha512",
+    "C:\\Users\\amand\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\5.0.4\\microsoft.netcore.app.host.linux-x64.5.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

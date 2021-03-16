@@ -80,3 +80,4 @@ C:\Users\amand\Documents\snake-coop-aspnet\obj\Debug\net5.0\ref\SignalRChat.dll
 C:\Users\amand\Documents\snake-coop-aspnet\obj\Debug\net5.0\SignalRChat.pdb
 C:\Users\amand\Documents\snake-coop-aspnet\obj\Debug\net5.0\SignalRChat.genruntimeconfig.cache
 C:\Users\amand\Documents\snake-coop-aspnet\obj\Debug\net5.0\SignalRChat.csproj.CopyComplete
+C:\Users\amand\Documents\snake-coop-aspnet\obj\Debug\net5.0\Razor\Pages\PassGen.cshtml.g.cs

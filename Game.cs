@@ -31,7 +31,7 @@ public sealed class Game
         this.gameBoardwidth = 30;
         this.snakes = new List<Snake>();
 
-        this.gameTimer = new System.Timers.Timer(700);
+        this.gameTimer = new System.Timers.Timer(300);
         this.gameTimer.Elapsed += Tick;
         this.gameTimer.AutoReset = true;
         this.gameTimer.Enabled = true;
@@ -131,6 +131,7 @@ public sealed class Game
             (snake.direction == "down" && direction != "up"))
             {
                 snake.inputEnabled = false;
+                _hubContext.Clients.Client(id).SendAsync("InputEnabled", snake.inputEnabled);
                 snake.previousDirection = snake.direction;
                 snake.direction = direction;
             }
